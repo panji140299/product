@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of products">
+        <div class="thumbnail">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="car-text">{{product.description}}</p>
+            <img src={{product.image}} class="img-fluid" alt="img-thumbnail" height="200" width="300">
+            <div class="btn-group" role="group">
+                <button type="button" [routerLink]="['/product-detail', product.id]" class="btn btn-danger">Check Product</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
